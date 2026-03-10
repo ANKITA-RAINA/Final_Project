@@ -8,7 +8,7 @@ model_rfc=joblib.load('RandomForest.pkl')
 
 
 
-Pclass=st.number_input("Enter passenger class")
+Pclass=st.number_input("Enter passenger class",step=1)
 Sex_female=st.number_input("Enter sex")
 Age=st.number_input("Enter age")
 Sibsp=st.number_input("Enter the number of siblings and spouses")
