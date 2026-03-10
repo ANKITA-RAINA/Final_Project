@@ -9,11 +9,11 @@ model_rfc=joblib.load('RandomForest.pkl')
 
 
 Pclass=st.number_input("Enter passenger class",step=1)
-Sex_female=st.number_input("Enter sex")
-Age=st.number_input("Enter age")
-Sibsp=st.number_input("Enter the number of siblings and spouses")
-Parch=st.number_input("Enter the number of parents and children")
-Fare=st.number_input("Enter fare")
+Sex_female=st.number_input("Enter sex",step=1)
+Age=st.number_input("Enter age",step=1)
+Sibsp=st.number_input("Enter the number of siblings and spouses",step=1)
+Parch=st.number_input("Enter the number of parents and children",step=1)
+Fare=st.number_input("Enter fare",step=1)
 
 ypred_lr=model_lr.predict([[Pclass,Age,Sibsp,Parch,Fare,Sex_female]])
 ypred_dtc=model_dtc.predict([[Pclass,Age,Sibsp,Parch,Fare,Sex_female]])
